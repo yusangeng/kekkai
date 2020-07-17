@@ -47,7 +47,8 @@
     "typescript": "^3.9.7"
   },
   "dependencies": {
-    "tslib": "^2.0.0"
+    "tslib": "^2.0.0",
+    "universal-env": "^3.2.0"
   },
   "nyc": {
     "extension": [
