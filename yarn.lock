@@ -2856,6 +2856,11 @@ ua-parser-js@0.7.21:
   resolved "https://registry.npm.taobao.org/ua-parser-js/download/ua-parser-js-0.7.21.tgz#853cf9ce93f642f67174273cc34565ae6f308777"
   integrity sha1-hTz5zpP2QvZxdCc8w0Vlrm8wh3c=
 
+universal-env@^3.2.0:
+  version "3.2.0"
+  resolved "https://registry.npm.taobao.org/universal-env/download/universal-env-3.2.0.tgz#ac25409a6308d9af9da0b8556d858b02887d0533"
+  integrity sha1-rCVAmmMI2a+doLhVbYWLAoh9BTM=
+
 universalify@^0.1.0:
   version "0.1.2"
   resolved "https://registry.npm.taobao.org/universalify/download/universalify-0.1.2.tgz#b646f69be3942dabcecc9d6639c80dc105efaa66"
