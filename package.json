@@ -10,8 +10,8 @@
     "test": "cross-env BROWSER=Chrome karma start karma.conf.js",
     "test-jsdom": "cross-env BROWSER=jsdom karma start karma.conf.js --singleRun=true",
     "coverage": "nyc report --reporter=lcov",
-    "es5": "rm -rf ./lib && tsc -p tsconfig.json",
-    "prepublishOnly": "npm run test && npm run es5",
+    "es5": "tsc -p tsconfig.json",
+    "prepublishOnly": "npm run test && rm -rf ./lib && npm run es5",
     "ci": "npm run test && npm run coverage && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
@@ -25,30 +25,28 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.2.11",
-    "@types/dateformat": "^3.0.1",
-    "@types/lodash": "^4.14.157",
-    "@types/mocha": "^8.0.0",
-    "@types/node": "^14.0.23",
-    "chai": "^4.2.0",
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "@types/node": "^15.12.2",
+    "chai": "^4.3.4",
     "coveralls": "^3.1.0",
-    "cross-env": "^7.0.2",
-    "jsdom": "^16.3.0",
-    "karma": "^5.1.0",
+    "cross-env": "^7.0.3",
+    "jsdom": "^16.6.0",
+    "karma": "^6.3.3",
     "karma-chai": "^0.1.0",
     "karma-chrome-launcher": "^3.1.0",
-    "karma-jsdom-launcher": "^8.0.2",
+    "karma-jsdom-launcher": "^9.0.0",
     "karma-mocha": "^2.0.1",
-    "karma-webpack": "^4.0.2",
-    "mocha": "^8.0.1",
+    "karma-webpack": "^5.0.0",
+    "mocha": "^9.0.0",
     "nyc": "^15.1.0",
     "source-map-support": "^0.5.19",
-    "ts-node": "^8.10.2",
-    "typescript": "^3.9.7"
+    "ts-node": "^10.0.0",
+    "typescript": "^4.3.2"
   },
   "dependencies": {
-    "tslib": "^2.0.0",
-    "universal-env": "^3.2.0"
+    "tslib": "^2.2.0",
+    "universal-env": "^3.3.1"
   },
   "nyc": {
     "extension": [
